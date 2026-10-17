@@ -110,4 +110,18 @@ Nhân viên trực tiếp pha chế, giao nước và xác nhận đã nhận ti
 
 ![S3 – Theo dõi đơn](wireframes/03-order-status.png)
 
-[Viết một đoạn giải thích thông tin khách cần theo dõi, kết quả sau khi gửi đơn và hành động tiếp theo hoặc điểm kết thúc luồng. Giải thích các nút/link nếu có.]
+Màn hình **Theo dõi đơn** cho phép khách hàng theo dõi tình trạng xử lý của đơn hàng sau khi đặt món thành công:
+1. **Thông tin đơn**
+   - Số bàn: Hiển thị số bàn mà khách hàng đang sử dụng.
+   - Mã đơn: Mã định danh duy nhất của đơn hàng, hỗ trợ tra cứu và đối chiếu khi cần thiết.
+   - Trạng thái đơn hàng: Cho biết tiến độ xử lý tổng thể của đơn, bao gồm Đang thực hiện và Hoàn thành.
+2. **Danh sách món đã đặt**  
+Mỗi món được hiển thị kèm hình ảnh, tên món, phân loại hoặc tùy chọn đã chọn, giá tiền và trạng thái xử lý riêng giúp khách hàng theo dõi tiến độ mà không cần kiểm tra trực tiếp với nhân viên:
+   - Đang làm (xanh dương): Món đang được nhân viên pha chế chuẩn bị.
+   - Đã xong (xanh lá): Món đã được chuẩn bị xong và sẵn sàng phục vụ.
+   - Đã hủy (đỏ): Món đã bị hủy; hệ thống hiển thị thêm lý do hủy để khách hàng nắm được thông tin.
+3. **Tổng tiền đơn**  
+Hiển thị tổng giá trị các món thuộc đơn, không bao gồm những món đã bị hủy. Tổng tiền được cập nhật tương ứng khi có thay đổi về danh sách món hoặc trạng thái hủy.
+4. **Điều hướng**   
+Nút `←` ở góc trên bên trái cho phép khách hàng quay lại màn hình menu để tiếp tục xem món và thực hiện một đơn mới.   
+Khách hàng hoàn toàn có thể quay lại theo dõi đơn hiện tại từ màn hình menu.
