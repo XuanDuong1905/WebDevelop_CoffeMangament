@@ -44,15 +44,25 @@ Changed: <Điểm đã chỉnh và lý do.>
 Rejected: <Đề xuất đã loại bỏ và lý do.>
 By hand: <Phần hình, nội dung hoặc kiểm tra tự thực hiện.>
 
-## <YYYY-MM-DD> — TV3: S3 — Theo dõi đơn
+## 2026-10-17 — TV3: S3 — Theo dõi đơn (Screen in main flow)
 
-Member: <Họ tên — MSSV>
-Tool: <Tên công cụ hoặc none>
-Asked for: <Yêu cầu hỗ trợ thiết kế hình, viết bước luồng hoặc giải thích S3.>
-Kept: <Bố cục, nội dung hoặc gợi ý thực tế đã sử dụng.>
-Changed: <Điểm đã chỉnh và lý do.>
-Rejected: <Đề xuất đã loại bỏ và lý do.>
-By hand: <Phần hình, nội dung hoặc kiểm tra tự thực hiện.>
+Member: Nguyễn Huỳnh Huy Phát - 24120406  
+Tool: Gemini  
+Asked for: Yêu cầu hỗ trợ thiết kế giao diện cho Màn hình Theo dõi đơn (S3)  
+Kept: Toàn bộ cấu trúc và thiết kế mẫu ban đầu  
+Changed: Cập nhật và thay thế các đường dẫn hình ảnh bị lỗi hiển thị (lỗi 404)  
+Rejected: Không có  
+By hand: Tự bổ sung thêm nút "←" ở góc trên để người dùng có thể điều hướng quay lại màn hình Menu  
+
+## 2026-10-17 — TV3: S3 — Theo dõi đơn (Luồng hoạt động)
+
+Member: Nguyễn Huỳnh Huy Phát - 24120406  
+Tool: ChatGPT  
+Asked for: Yêu cầu chỉnh sửa lời văn cho phần luồng hoạt động và giải thích giao diện đã viết  
+Kept: Toàn bộ nội dung và ý chính đã được tạo ra  
+Changed: Không có  
+Rejected: Lượt bỏ các chi tiết mô tả tương tác không cần thiết giữa nhân viên pha chế và nhân viên phục vụ trong luồng hoạt động  
+By hand: Không có  
 
 ## <YYYY-MM-DD> — <TV phụ trách>: AI log, tự đánh giá hoặc kiểm tra bài nộp
 
