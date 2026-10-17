@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | TV1 | [Họ tên] | [MSSV] |
 | TV2 | [Họ tên] | [MSSV] |
-| TV3 | [Họ tên] | [MSSV] |
+| TV3 | Nguyễn Huỳnh Huy Phát | 24120406 |
 
 ## 2. The problem
 
@@ -35,7 +35,28 @@ Trong bối cảnh giả định của một quán cà phê có một địa đi
 
 1. **S1 – Thực đơn:** [Khách chọn món, số lượng và thao tác để chuyển sang S2.]
 2. **S2 – Kiểm tra và gửi đơn:** [Khách kiểm tra, điều chỉnh giỏ hàng, nhập ghi chú và gửi đơn để chuyển sang S3.]
-3. **S3 – Theo dõi đơn:** [Khách nhận thông tin xác nhận và theo dõi tiến độ; nêu kết quả kết thúc luồng.]
+3. **S3 – Theo dõi đơn:**
+
+- Sau khi khách hàng gửi đơn thành công, hệ thống ghi nhận thông tin đơn hàng và danh sách món đã đặt vào cơ sở dữ liệu.
+
+- Hệ thống chuyển giao diện sang màn hình **Theo dõi đơn**, hiển thị mã đơn, số bàn, trạng thái đơn (*Đang thực hiện*), danh sách món đã đặt, trạng thái từng món và tổng tiền đơn hàng.
+
+- **Trường hợp món được hoàn thành:**
+  - Nhân viên pha chế hoàn tất việc chuẩn bị món.
+  - Nhân viên phục vụ cập nhật trạng thái món thành *Đã xong* trên hệ thống.
+  - Hệ thống lưu trạng thái mới vào cơ sở dữ liệu và cập nhật thông tin trên giao diện theo dõi đơn của khách hàng.
+
+- **Trường hợp món bị hủy:**
+  - Nhân viên pha chế thông báo không thể thực hiện món, kèm theo lý do hủy.
+  - Nhân viên phục vụ cập nhật trạng thái món thành *Đã hủy* và nhập lý do hủy trên hệ thống.
+  - Hệ thống lưu trạng thái và lý do hủy vào cơ sở dữ liệu, đồng thời tính toán lại tổng tiền đơn hàng bằng cách loại trừ giá tiền của món bị hủy.
+  - Giao diện theo dõi đơn của khách hàng cập nhật trạng thái *Đã hủy*, hiển thị lý do hủy và tổng tiền mới.
+
+- **Trường hợp hoàn tất đơn hàng:**
+  - Khi tất cả món trong đơn đã được xác định kết quả xử lý (*Đã xong* hoặc *Đã hủy*), nhân viên phục vụ mang các món đã hoàn thành đến khách hàng.
+  - Sau khi hoàn tất việc phục vụ, nhân viên phục vụ cập nhật trạng thái đơn hàng thành *Đã hoàn thành* trên hệ thống.
+  - Hệ thống lưu trạng thái mới vào cơ sở dữ liệu và cập nhật giao diện theo dõi đơn của khách hàng.
+  - Luồng theo dõi đơn kết thúc khi đơn hàng được xác nhận hoàn thành.
 
 ## 5. Scope
 
