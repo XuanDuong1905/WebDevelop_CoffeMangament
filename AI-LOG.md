@@ -24,25 +24,25 @@ Changed: <Nội dung đã chỉnh để phù hợp bài toán và nguồn lực 
 Rejected: <Nội dung hoặc chức năng đề xuất đã loại bỏ; nêu lý do.>
 By hand: <Phần tự viết, tự xác định hoặc tự kiểm tra.>
 
-## <YYYY-MM-DD> — TV2: S1 — Thực đơn
+## 2026-10-17 — TV2: S1 — Thực đơn
 
-Member: <Họ tên — MSSV>
-Tool: <Tên công cụ hoặc none>
-Asked for: <Yêu cầu hỗ trợ thiết kế hình, viết bước luồng hoặc giải thích S1.>
-Kept: <Bố cục, nội dung hoặc gợi ý thực tế đã sử dụng.>
-Changed: <Điểm đã chỉnh và lý do.>
-Rejected: <Đề xuất đã loại bỏ và lý do.>
-By hand: <Phần hình, nội dung hoặc kiểm tra tự thực hiện.>
+Member: <Trần Thiên Ân — 24120255>
+Tool: Claude
+Asked for: Dựng wireframe HTML cho màn hình thực đơn (khổ 390×844) và viết đoạn giải thích S1 cho mục 4 và 6.
+Kept: Thanh tab nhóm món, nút + và bộ chỉnh −/+, khung chọn size/đá/đường/ghi chú, thanh giỏ hàng cố định ở đáy, nút "Theo dõi đơn" sang S3.
+Changed: Không có.
+Rejected: Bỏ giao diện hiển thị không cần thiết như bàn, các khung che.
+By hand: đối chiếu hình với S3, kiểm tra mọi nút có đích đến và có trong văn bản
 
-## <YYYY-MM-DD> — TV2: S2 — Kiểm tra và gửi đơn
+## 2026-10-17 — TV2: S2 — Kiểm tra và gửi đơn
 
-Member: <Họ tên — MSSV>
-Tool: <Tên công cụ hoặc none>
-Asked for: <Yêu cầu hỗ trợ thiết kế hình, viết bước luồng hoặc giải thích S2.>
-Kept: <Bố cục, nội dung hoặc gợi ý thực tế đã sử dụng.>
-Changed: <Điểm đã chỉnh và lý do.>
-Rejected: <Đề xuất đã loại bỏ và lý do.>
-By hand: <Phần hình, nội dung hoặc kiểm tra tự thực hiện.>
+Member: <Trần Thiên Ân — 24120255>
+Tool: Claude
+Asked for: Dựng wireframe HTML cho màn hình kiểm tra đơn và viết đoạn giải thích S2 cho mục 4 và 6.
+Kept: Danh sách món có −/+ và nút Xóa, ghi chú từng món và cả đơn, tổng tiền, nút "Gửi đơn", khung trạng thái giỏ trống.
+Changed: Thêm nút quay lại giỏ hàng của bạn
+Rejected: Không có
+By hand: kiểm tra tổng tiền S2 khớp S1 (61.000đ), hỏi nhóm về bước duyệt đơn.
 
 ## 2026-10-17 — TV3: S3 — Theo dõi đơn (Screen in main flow)
 

@@ -9,7 +9,7 @@
 | Thành viên | Họ và tên | MSSV |
 | --- | --- | --- |
 | TV1 | [Họ tên] | [MSSV] |
-| TV2 | [Họ tên] | [MSSV] |
+| TV2 | Trần Thiên Ân | 24120255 |
 | TV3 | Nguyễn Huỳnh Huy Phát | 24120406 |
 
 ## 2. The problem
@@ -31,10 +31,10 @@ Trong bối cảnh giả định của một quán cà phê có một địa đi
 
 **Người thực hiện:** Khách hàng tại bàn.
 
-**Điểm bắt đầu:** [Khách quét QR của bàn và truy cập thực đơn.]
+**Điểm bắt đầu:** Khách ngồi tại bàn quét mã QR dán trên bàn; hệ thống xác định đúng số bàn và mở trang thực đơn.
 
-1. **S1 – Thực đơn:** [Khách chọn món, số lượng và thao tác để chuyển sang S2.]
-2. **S2 – Kiểm tra và gửi đơn:** [Khách kiểm tra, điều chỉnh giỏ hàng, nhập ghi chú và gửi đơn để chuyển sang S3.]
+1. **S1 – Thực đơn:** Khách chọn nhóm món, xem hình và giá, bấm **+** để thêm món vào giỏ. Với mỗi món, khách chọn size, mức đá, mức đường và ghi chú. Món đã hết được làm xám và không thể chọn. Khi giỏ có ít nhất một món, khách bấm **Xem giỏ hàng** để sang S2.
+2. **S2 – Kiểm tra và gửi đơn:** Khách rà lại danh sách món, tăng/giảm số lượng hoặc xóa món, sửa ghi chú và xem tổng tiền. Nếu cần chọn thêm, khách bấm **←** để về S1. Khi đã đúng, khách bấm **Gửi đơn**; hệ thống ghi nhận đơn và chuyển sang S3 để theo dõi.
 3. **S3 – Theo dõi đơn:**
 
 - Sau khi khách hàng gửi đơn thành công, hệ thống ghi nhận thông tin đơn hàng và danh sách món đã đặt vào cơ sở dữ liệu.
@@ -90,19 +90,14 @@ Nhân viên trực tiếp pha chế, giao nước và xác nhận đã nhận ti
 
 ### S1 – Thực đơn
 
-<!-- Phụ trách: TV2 -->
-
 ![S1 – Thực đơn](wireframes/01-menu.png)
-
-[Viết một đoạn giải thích mục đích của khách tại màn hình này, thao tác chọn món và cách chuyển sang S2. Giải thích các nút/link còn lại nếu có.]
+Tại màn hình Thực đơn, khách muốn xem quán có gì và chọn món cần gọi. Khách chuyển giữa các nhóm món bằng thanh tab phía trên, bấm **+** để thêm món, rồi chọn size, đá, đường và ghi chú trong khung chọn món, sau đó bấm **Thêm vào giỏ** (hoặc **Hủy** để đóng khung). Món đã có trong giỏ hiển thị bộ chỉnh **−/+**; món hết hàng hiển thị xám với nhãn "Hết hàng" và không bấm được. Thanh dưới cùng cho biết số món và tạm tính; nút **Xem giỏ hàng** đưa khách sang S2. Nút **Theo dõi đơn** ở góc trên đưa khách sang S3 để xem đơn đã gửi trước đó.
 
 ### S2 – Kiểm tra và gửi đơn
 
-<!-- Phụ trách: TV2 -->
-
 ![S2 – Kiểm tra và gửi đơn](wireframes/02-review-order.png)
 
-[Viết một đoạn giải thích cách khách kiểm tra và điều chỉnh đơn, gửi đơn để sang S3 hoặc quay lại S1. Giải thích các nút/link còn lại nếu có.]
+Tại màn hình Kiểm tra và gửi đơn, khách muốn chắc chắn đơn đúng trước khi gửi cho quán. Khách chỉnh số lượng bằng nút **−/+**, xóa món bằng nút **Xóa**, sửa ghi chú từng món hoặc ghi chú chung cho cả đơn, và xem tổng tiền cập nhật ngay. Nút **←** đưa khách về S1 để chọn thêm món; nếu xóa hết món, màn hình báo "Giỏ hàng trống" và nút **Quay lại thực đơn** đưa khách về S1. Nút **Gửi đơn** gửi yêu cầu đến quán và chuyển khách sang S3.
 
 ### S3 – Theo dõi đơn
 
