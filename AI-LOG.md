@@ -58,7 +58,7 @@
 - **Kept:** Danh sách món có −/+ và nút Xóa, ghi chú từng món và cả đơn, tổng tiền, nút "Gửi đơn", khung trạng thái giỏ trống.
 - **Changed:** Thêm nút quay lại giỏ hàng của bạn.
 - **Rejected:** Không có.
-- **By hand:** Kiểm tra tổng tiền S2 khớp S1 (61.000đ), hỏi nhóm về bước duyệt đơn.
+- **By hand:** Kiểm tra lại tính toán có phù hợp, hỏi nhóm về bước duyệt đơn.
 
 ## 2026-10-17 — TV3: S3 — Theo dõi đơn (Screen in main flow)
 
