@@ -1,14 +1,10 @@
 # PA#1 – Hệ thống đặt món tại quán cà phê
 
-> Đã điền bài toán, người dùng và phạm vi từ tài liệu nguồn. Điền thông tin nhóm, hoàn thiện luồng và màn hình, rồi xóa hướng dẫn trước khi nộp.
-
 ## 1. Team
-
-<!-- Phụ trách: TV1 -->
 
 | Thành viên | Họ và tên | MSSV |
 | --- | --- | --- |
-| TV1 | [Họ tên] | [MSSV] |
+| TV1 | Cao Xuân Dương | 24120292 |
 | TV2 | Trần Thiên Ân | 24120255 |
 | TV3 | Nguyễn Huỳnh Huy Phát | 24120406 |
 
@@ -27,7 +23,6 @@ Trong bối cảnh giả định của một quán cà phê có một địa đi
 
 ## 4. Main flow
 
-<!-- TV2 viết bước 1–2; TV3 viết bước 3. Ba màn hình liên tiếp thuộc cùng một luồng khách đặt món. Nêu thao tác và kết quả, không chỉ liệt kê tên màn hình. -->
 
 **Người thực hiện:** Khách hàng tại bàn.
 
@@ -86,7 +81,6 @@ Nhân viên trực tiếp pha chế, giao nước và xác nhận đã nhận ti
 
 ## 6. Screens
 
-<!-- Mỗi màn hình có một đoạn ngắn: người dùng muốn làm gì, thao tác chính và đi đâu tiếp theo. Hình và nội dung phải khớp; mọi nút/link phải có đích đến hoặc được giải thích trong văn bản. -->
 
 ### S1 – Thực đơn
 
@@ -100,8 +94,6 @@ Tại màn hình Thực đơn, khách muốn xem quán có gì và chọn món c
 Tại màn hình Kiểm tra và gửi đơn, khách muốn chắc chắn đơn đúng trước khi gửi cho quán. Khách chỉnh số lượng bằng nút **−/+**, xóa món bằng nút **Xóa**, sửa ghi chú từng món hoặc ghi chú chung cho cả đơn, và xem tổng tiền cập nhật ngay. Nút **←** đưa khách về S1 để chọn thêm món; nếu xóa hết món, màn hình báo "Giỏ hàng trống" và nút **Quay lại thực đơn** đưa khách về S1. Nút **Gửi đơn** gửi yêu cầu đến quán và chuyển khách sang S3.
 
 ### S3 – Theo dõi đơn
-
-<!-- Phụ trách: TV3 -->
 
 ![S3 – Theo dõi đơn](wireframes/03-order-status.png)
 
