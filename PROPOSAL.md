@@ -85,6 +85,7 @@ Nhân viên trực tiếp pha chế, giao nước và xác nhận đã nhận ti
 ### S1 – Thực đơn
 
 ![S1 – Thực đơn](wireframes/01-menu.png)
+
 Tại màn hình Thực đơn, khách muốn xem quán có gì và chọn món cần gọi. Khách chuyển giữa các nhóm món bằng thanh tab phía trên, bấm **+** để thêm món, rồi chọn size, đá, đường và ghi chú trong khung chọn món, sau đó bấm **Thêm vào giỏ** (hoặc **Hủy** để đóng khung). Món đã có trong giỏ hiển thị bộ chỉnh **−/+**; món hết hàng hiển thị xám với nhãn "Hết hàng" và không bấm được. Thanh dưới cùng cho biết số món và tạm tính; nút **Xem giỏ hàng** đưa khách sang S2. Nút **Theo dõi đơn** ở góc trên đưa khách sang S3 để xem đơn đã gửi trước đó.
 
 ### S2 – Kiểm tra và gửi đơn
